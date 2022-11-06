@@ -2,18 +2,22 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './landing_page.css'
 import Button from '@mui/material/Button';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 
 /*
 React Landing Page
 Author: Sreyansh Mamidi
-Date: 10/16/2022
+Date: 10/30/2022
 References: https://reactjs.org/tutorial/tutorial.html, W3Schools
 Notes:
     - Researched different CSS frameworks - Material UI (MUI) and Bootstrap
     - Found a version of Plotly's API that's compatible with React (React Plotly.js)
-    - Added MUI buttons to the app
+    - Added some React-Boostrap code to the website
 To Do:
-    - Add more MUI components and implement Plotly.js
+    - Add more React-Boostrap components
+    - Meet with team to work on back-end and implement Plotly.js
 */
 
 // Material UI (https://mui.com/), Bootstrap (https://getbootstrap.com/docs/5.2/getting-started/introduction/)
@@ -48,6 +52,27 @@ class Dining extends React.Component {
         );
     }
 }
+
+function showNavBar() {
+    return (
+        <>
+            <Navbar bg="light" variant="primary">
+                <Container>
+                    <Navbar.Brand href="#landing-page">Dining Diego</Navbar.Brand>
+                    <Nav className="me-auto">
+                        <Nav.Link href="#landing-page">Home</Nav.Link>
+                        <Nav.Link href="#dining">ISR</Nav.Link>
+                        <Nav.Link href="#dining">IKE</Nav.Link>
+                        <Nav.Link href="#dining">PAR</Nav.Link>
+                        <Nav.Link href="#dining">LAR</Nav.Link>
+                    </Nav>
+                </Container>
+            </Navbar>
+        </>
+    );
+}
+
+// export default showNavBar;
 
 class Page extends React.Component {
     renderDiningHall(name) {
