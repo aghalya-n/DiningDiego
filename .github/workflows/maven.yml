@@ -5,9 +5,11 @@ name: Java CI with Maven
 
 on:
   push:
-    branches: [ "main" ]
+    paths:
+      - dining-diego-backend/**
   pull_request:
-    branches: [ "main" ]
+    paths:
+      - dining-diego-backend/**
 
 jobs:
   build:
