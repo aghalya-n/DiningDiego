@@ -1,17 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './landing_page.css'
-import {Button, AppBar, Container, Toolbar, Typography, Box, IconButton} from '@mui/material';
-import {MenuIcon} from "@mui/icons-material"
+import {Button, AppBar, Container, Toolbar, Typography, ButtonGroup, Avatar} from '@mui/material';
 
 /*
 React Landing Page
 Author: Sreyansh Mamidi
-Date: 11/13/2022
-References: https://reactjs.org/tutorial/tutorial.html, W3Schools
+Date: 11/20/2022
+References: Material UI (https://mui.com/), W3Schools
 */
 
-// Material UI (https://mui.com/), Bootstrap (https://getbootstrap.com/docs/5.2/getting-started/introduction/)
+// Illini Orange: #FF5F05, Illini Blue: #13294B
+// https://marketing.illinois.edu/visual-identity/color
 class Dining extends React.Component {
     constructor(props) {
         super(props);
@@ -32,11 +32,11 @@ class Dining extends React.Component {
             <Button
             variant="contained"
             size="large"
-            color="success" 
+            style = {{backgroundColor: '#13294B', maxWidth: '150px', maxHeight: '100px', minWidth: '150px', minHeight: '100px'}}
             className={b_class}
             onClick={this.select.bind(this)}
             >
-            {this.props.value}
+            <span style={{fontSize: '20px'}}> {this.props.value} </span>
             </Button>
         </div>
 
@@ -50,7 +50,7 @@ class Page extends React.Component {
     }
 
     render() {
-        const message = "Welcome! Here are the dining options offered at UIUC.";
+        const intro_message = "Select a dining hall to get started.";
         var now = new Date();
         var date = now.toLocaleDateString();
         var time = now.toLocaleTimeString();
@@ -66,55 +66,47 @@ class Page extends React.Component {
         let day_of_week = days_of_week.get(day);
 
         /**
-         * Connect this interface to back-end data
-         * One option: Plotly API - https://plotly.com/javascript/react/
-         * JSX expressions must have 1 parent element -> can't return multiple values
+         * Note: JSX expressions must have 1 parent element -> can't return multiple values
          */
         return (
-            // <div>
-            //     <h2 class="main-head"> Dining Diego at UIUC </h2>
-            //     <div className='message'> {message} </div>
-            //     <div className='page'>
-            //     <br></br>
-            //     <b className="time"> Date: {day_of_week}   {date}            Time: {time}</b>
-            //     <br></br>
-            //     <br></br>
-            //     {this.renderDiningHall("ISR")}
-            //     <br></br>
-            //     {this.renderDiningHall("IKE")}
-            //     <br></br>
-            //     {this.renderDiningHall("PAR")}
-            //     <br></br>
-            //     {this.renderDiningHall("LAR")} 
-            //     </div>
-            // </div>
             <>
-                <AppBar position="static">
+                {/* Creates the navigation bar, displays the current date and time */}
+                <AppBar position="static" style={{background: '#13294B'}}>
                     <Container maxWidth="x1">
                         <Toolbar disableGutters>
-                            <Typography variant="h6" sx={{fontFamily: 'monospace', fontWeight: 500}}> Dining Diego </Typography>
-                                <IconButton
-                                    size="large"
-                                    edge="start"
-                                    color="inherit"
-                                    aria-label="menu"
-                                    sx={{ mr: 2 }}
-                                >
-                            </IconButton>
-                            {/* {this.renderDiningHall("ISR")} */}
-                            <Button color="inherit"> ISR </Button>
-                            <Button color="inherit"> IKE </Button>
-                            <Button color="inherit"> LAR </Button>
-                            <Button color="inherit"> PAR </Button>
+                            <Typography variant="h6" sx={{fontFamily: 'monospace', fontWeight: 500}}> <strong> Dining Diego at the University of Illinois </strong>  — </Typography>
+                            &nbsp;
+                            &nbsp;
+                            <Typography variant="h6" sx={{fontFamily: 'monospace', fontWeight: 500}}> {day_of_week}   {date}           {time} </Typography>
+                            &nbsp;
+                            &nbsp;
+                            &nbsp;
+                            <Avatar alt="UIUC" src="https://marketing.illinois.edu/wp-content/uploads/2021/09/block-I-orange-background.png" sx={{width: 40, height: 40}}/>
                         </Toolbar>
                     </Container>
                 </AppBar>
-                <br></br>
-                <span> Welcome! Select a dining hall to get started. </span>
-                <br></br><br></br> <br></br>
-                <b className="time"> Date: {day_of_week}   {date}            Time: {time}</b>
+                {/* Provides insructions about how to use the web app */}
+                <div>
+	                 <h2 class="main-head" style={{color: '#FF5F05', fontFamily: 'monospace'}}> Welcome </h2>
+	                 <div className='message' style={{fontFamily: 'sans-serif'}}> {intro_message} </div>
+	                 <div className='page'>
+	                 <br></br>
+                     <h2 class="main-head" style={{color: '#FF5F05', fontFamily: 'monospace'}}> Dining Halls </h2>
+                     <div className='message' style={{fontFamily: 'sans-serif'}}> The University of Illinois has <strong> four </strong> buffet-style dining options. </div>
+	                 <br></br>
+                     {/* Displays the dining halls that the user can choose from */}
+                     <ButtonGroup variant="outlined" size="large">
+                        {this.renderDiningHall("ISR")}
+                        &nbsp;
+                        {this.renderDiningHall("IKE")}
+                        &nbsp;
+                        {this.renderDiningHall("PAR")}
+                        &nbsp;
+                        {this.renderDiningHall("LAR")} 
+                     </ButtonGroup>
+	                </div>
+                </div>
             </>
-
         );
     }
 }
