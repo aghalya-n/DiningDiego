@@ -1,0 +1,35 @@
+body {
+    font: 20px "Arial", sans-serif;
+    margin: 20px;
+}
+
+.dining {
+    border: none;
+    text-align: center;
+    color: white;
+    padding: 40px 60px;
+    font-size: 24px;
+    border-radius: 15px;
+    background-color: #fc6603;
+    margin: auto;
+}
+
+.dining_new {
+    border: none;
+    text-align: center;
+    color: white;
+    padding: 40px 60px;
+    font-size: 24px;
+    border-radius: 15px;
+    background-color: #3471eb;
+    margin: auto;
+}
+
+h2.main-head {
+    color: #3471eb;
+}
+
+.time {
+    font-size: 18px;
+    
+}
