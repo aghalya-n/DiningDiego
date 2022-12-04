@@ -6,10 +6,10 @@ name: Java CI with Maven
 on:
   push:
     paths:
-      - dining-diego-backend/**
+      - diningdiego/**
   pull_request:
     paths:
-      - dining-diego-backend/**
+      - diningdiego/**
 
 jobs:
   build:
