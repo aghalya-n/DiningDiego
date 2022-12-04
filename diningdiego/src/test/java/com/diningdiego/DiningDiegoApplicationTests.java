@@ -1,10 +1,10 @@
-package diningdiego.backend;
+package com.diningdiego;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ApplicationTests {
+class DiningDiegoApplicationTests {
 
 	@Test
 	void contextLoads() {
