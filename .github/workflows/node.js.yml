@@ -6,10 +6,10 @@ name: Node.js CI
 on:
   push:
     paths:
-      - front-end/**
+      - Frontend/**
   pull_request:
     paths:
-      - front-end/**
+      - Frontend/**
 
 jobs:
   build:
