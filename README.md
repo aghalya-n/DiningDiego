@@ -15,8 +15,6 @@ We have all found ourselves going to the Dining Hall at its peak times, and this
 
 # Technical Architecture
 
-Technical Architecture:
-
 Below listed is our diagram:
 
 ![image](https://user-images.githubusercontent.com/87607418/206287350-a06432a2-6fc0-4469-b95c-15dc50e023f2.png)
@@ -26,7 +24,14 @@ The diagram above is an explanation of how we integrate the spreadsheets of six 
 For each of these components, we delegated specific members to work on the individual tasks.
 The front end of this project was built mainly using Javascript's React library in addition to CSS for formatting, fonts, and coloring. The backend was built using Java and Python (specifically the pandas library) to coordinate, organize, and analyze the student crowd data at various times that we received through contacting UIUC housing.
 
-If you want to interact with our code, ensure you have cloned the repository first. You should have an editor that can work with Java, CSS, Python, Anacondas, and React. You will need to download React and all of its associating frameworks (i.e. bootstrap). In addition, you should import pandas (via Anacondas) as well as all javax.persistence API members.
+# Using Our Project
+1. Clone the repo onto your local machine.
+2. Ensure that you have MySQL and MySQL Workbench installed in order to store the data.
+3. Open the backend portion of the project in your IDE of choice for java applications.
+4. Open the frontend portion of the project in your idea or editor of choice.
+5. Install Postman or other alternatives to test the supported APIs. A collection can be found in the repo.
+6. Usee npm install in your terminal on the front end portion to obtain all the node modules.
+7. Run both the spring boot application and front end application and you are all set.
 
 # Group Member Role Description:
 
