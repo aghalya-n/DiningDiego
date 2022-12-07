@@ -19,6 +19,8 @@ Technical Architecture:
 
 Below listed is our diagram:
 
+![image](https://user-images.githubusercontent.com/87607418/206286817-d3da21c0-d863-44c1-b2a6-ec847178d4a4.png)
+
 (Insert information about the diagram here)
 
 For each of these components, we delegated specific members to work on the individual tasks.
