@@ -26,12 +26,12 @@ The front end of this project was built mainly using Javascript's React library 
 
 If you want to interact with our code, ensure you have cloned the repository first. You should have an editor that can work with Java, CSS, Python, Anacondas, and React. You will need to download React and all of its associating frameworks (i.e. bootstrap). In addition, you should import pandas (via Anacondas) as well as all javax.persistence API members.
 
-# Technical Architecture Contributions by Group Member:
+# Group Member Role Description:
 
-Nathan Joseph: Gathered and organized all of the university dining hall data, as well as completed the information analysis by working with Python, and worked on the README to explain project to viewers.
+Nathan Joseph: Gathered and organized all of the university dining hall data, as well as completed the information analysis by working with Python, and worked on the README file to explain project to viewers. Met with mentor and groupmates to effectively integrate data and discuss solutions to possible errors.
 
-Sreyansh Mamidi: Worked on the front end of the web application using React and CSS, in addition to integrating the front end with the back end.
+Sreyansh Mamidi: Worked on the front end of the web application using React and CSS, in addition to integrating the front end with the back end. Met with mentor and groupmates to effectively integrate data and discuss solutions to possible errors.
 
-Siddarth Tangri: Integrated the Python data with Java and furnished the backend using Java to parse the data and output the right values of the crowd levels corresponding to certain times on each day of the week.
+Siddarth Tangri: Integrated the Python data with Java and furnished the backend using Java to parse the data and output the right values of the crowd levels corresponding to certain times on each day of the week. Met with mentor and groupmates to effectively integrate data and discuss solutions to possible errors.
 
-Aghalya Narayanan: Worked on the front end of the web application using React, in addition to completing the README file to explain the project to viewers.
+Aghalya Narayanan: Researched for the front end of the web application using React, in addition to contibuting to the README file to explain the project to viewers. Met with mentor to participate in discussion.
