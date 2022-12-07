@@ -19,9 +19,9 @@ Technical Architecture:
 
 Below listed is our diagram:
 
-![image](https://user-images.githubusercontent.com/87607418/206286817-d3da21c0-d863-44c1-b2a6-ec847178d4a4.png)
+![image](https://user-images.githubusercontent.com/87607418/206287350-a06432a2-6fc0-4469-b95c-15dc50e023f2.png)
 
-(Insert information about the diagram here)
+The diagram above is an explanation of how we integrate the spreadsheets of six weeks worth of Dining Hall entry data, and from there, the data was parsed to be formatted in a way interpretable by the Backend. Once in the backend, all data is placed into the MySQL database, and the Backend is then used for interactive components for users in the Frontend, which is used for the website interface.
 
 For each of these components, we delegated specific members to work on the individual tasks.
 The front end of this project was built mainly using Javascript's React library in addition to CSS for formatting, fonts, and coloring. The backend was built using Java and Python (specifically the pandas library) to coordinate, organize, and analyze the student crowd data at various times that we received through contacting UIUC housing.
