@@ -7,7 +7,6 @@ The front end of this project was built mainly using Javascript's React library 
 
 If you potentially want to interact with our code, ensure you have cloned the repository first. You should have an editor that can work with Java, CSS, Python, and React. You will need to download React and all of its associating frameworks (i.e. bootstrap). In addition, you should import pandas as well as all javax.persistence API members.
 
-
 Roles of project members:
 
 Nathan Joseph gathered and organized all of the university dining hall data, as well as completed the information analysis by working with Python.
