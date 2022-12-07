@@ -10,9 +10,6 @@ If you potentially want to interact with our code, ensure you have cloned the re
 Roles of project members:
 
 Nathan Joseph gathered and organized all of the university dining hall data, as well as completed the information analysis by working with Python.
-
 Sreyansh Mamidi worked on the front end of the web application using React and CSS, in addition to integrating the front end with the back end.
-
 Siddarth Tangri integrated the Python data with Java and furnished the back end using Java to parse the data and output the right values of the crowd levels corresponding to certain times on each day of the week.
-
 Aghalya Narayanan worked on the front end of the web application using React, in addition to completing the Readme file to explain the project to viewers.
