@@ -39,6 +39,6 @@ Nathan Joseph: Gathered and organized all of the university dining hall data, as
 
 Sreyansh Mamidi: Worked on the front end of the web application using React and CSS, in addition to integrating the front end with the back end. Met with mentor and groupmates to effectively integrate data and discuss solutions to possible errors.
 
-Siddarth Tangri: Integrated the Python data with Java and furnished the backend using Java to parse the data and output the right values of the crowd levels corresponding to certain times on each day of the week. Met with mentor and groupmates to effectively integrate data and discuss solutions to possible errors.
+Siddharth Tangri: Integrated the Python data with Java and furnished the backend using Java to parse the data and output the right values of the crowd levels corresponding to certain times on each day of the week. Met with mentor and groupmates to effectively integrate data and discuss solutions to possible errors.
 
 Aghalya Narayanan: Researched for the front end of the web application using React, in addition to contibuting to the README file to explain the project to viewers. Met with mentor to participate in discussion.
